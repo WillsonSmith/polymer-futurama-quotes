@@ -8,7 +8,7 @@ any other polymer element.
 
 ```
 <script src="bower_components/platform/platform.js"></script>
-   <link rel="import" href="elements/futurama-quotes.html">
+<link rel="import" href="elements/futurama-quotes.html">
 ```
 
 The quote element has a width set of 100%, this way it will fit to the width of
