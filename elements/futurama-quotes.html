@@ -1,0 +1,75 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="futurama-quotes">
+
+  <template>
+    <style>
+
+      section {
+
+        display: block;
+        width: 100%;
+
+        box-shadow: 0 1px 4px rgba(0,0,0,0.27),0 0 40px rgba(0,0,0,0.06) inset;
+        box-sizing: border-box;
+        border-radius: 3px;
+
+        padding: 10px 20px;
+
+
+      }
+
+    </style>
+
+    <section>
+      <p id='quote'></p>
+    </section>
+
+  </template>
+
+  <script>
+
+    function Connect(method, location) {
+
+        var request = new XMLHttpRequest(),
+            response;
+
+        request.open(method, location, false);
+        request.send();
+
+        if (request.status === 200) {
+
+            response = request.responseText;
+
+        }
+
+        this.respond = function() {
+
+            return response;
+
+        };
+
+    }
+
+
+    Polymer('futurama-quotes', {
+      user: "Willson",
+      quote: "",
+      ready: function(){
+
+
+        var quoteConnect = new Connect('GET', '../futurama.js');
+        var quotesArray = JSON.parse(quoteConnect.respond());
+        var quotesLength = quotesArray.length;
+        var usedQuote = quotesArray[Math.floor(Math.random() * (quotesLength))];
+        usedQuote = usedQuote.replace(/(?:\r\n|\r|\n)/g, '<br />');
+        this.$.quote.innerHTML = usedQuote;
+
+
+      }
+
+    });
+
+  </script>
+
+</polymer-element>

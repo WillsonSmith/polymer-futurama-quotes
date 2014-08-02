@@ -1,0 +1,26 @@
+{
+  "name": "futurama-quotes",
+  "version": "0.0.0",
+  "authors": [
+    "Willson Smith <willsonsmth@gmail.com>"
+  ],
+  "description": "polymer element to generate futurama quotes",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "futurama",
+    "quotes"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.4"
+  }
+}
