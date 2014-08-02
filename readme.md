@@ -6,9 +6,10 @@ This is a polymer element that gives you a random polymer element.
 To use the element, include these two items in your `<head>` tags, this works like
 any other polymer element.
 
-```<script src="bower_components/platform/platform.js"></script>
-
-   <link rel="import" href="elements/futurama-quotes.html">```
+```
+<script src="bower_components/platform/platform.js"></script>
+   <link rel="import" href="elements/futurama-quotes.html">
+```
 
 The quote element has a width set of 100%, this way it will fit to the width of
 whatever container you put the `<futurama-quote>` element in.
