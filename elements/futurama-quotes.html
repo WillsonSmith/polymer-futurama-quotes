@@ -42,7 +42,7 @@
       ready: function(){
 
 
-        var quoteConnect = new Connect('GET', '../futurama.js');
+        var quoteConnect = new Connect('GET', 'elements/futurama.js');
         var quotesArray = JSON.parse(quoteConnect.respond());
         var quotesLength = quotesArray.length;
         var usedQuote = quotesArray[Math.floor(Math.random() * (quotesLength))];
