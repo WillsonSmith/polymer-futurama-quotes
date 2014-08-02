@@ -4,23 +4,16 @@
   "authors": [
     "Willson Smith <willsonsmth@gmail.com>"
   ],
-  "description": "polymer element to generate futurama quotes",
-  "moduleType": [
-    "amd"
-  ],
-  "keywords": [
-    "futurama",
-    "quotes"
-  ],
+  "description": "polymer element to generate futurama quotes.",
+  "keywords": "seed, polymer, web-components, futurama, quotes",
+  "main": "futurama-quotes.html",
   "license": "MIT",
+  "homepage": "https://github.com/WillsonSmith/polymer-futurama-quotes/",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "**/.*"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.3.4"
+    "polymer": "Polymer/polymer#~0.3.3",
+    "polymer-test-tools": "Polymer/polymer-test-tools#~0.3.3"
   }
 }
