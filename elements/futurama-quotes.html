@@ -46,7 +46,7 @@
             quotesArray = JSON.parse(quoteConnect.respond()),
             quotesLength = quotesArray.length,
             usedQuote = quotesArray[Math.floor(Math.random() * (quotesLength))];
-            
+
         usedQuote = usedQuote.replace(/(?:\r\n|\r|\n)/g, '<br />');
         this.$.quote.innerHTML = usedQuote;
 
