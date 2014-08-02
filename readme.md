@@ -24,3 +24,5 @@ whatever container you put the `<futurama-quote>` element in.
 Note that viewing these on your local machine will require a server running as
 for security reasons, polymer element will not be loaded on `file://` paths. I
 recommend `python -m SimpleHTTPServer` for the easiest way to test.
+
+See `index.html` for a basic example.
