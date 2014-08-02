@@ -1,0 +1,7 @@
+{
+  "name": "polymer-futurama-quotes#gh-pages",
+  "private": true,
+  "dependencies": {
+    "futurama-quotes": "WillsonSmith/polymer-futurama-quotes#master"
+  }
+}
