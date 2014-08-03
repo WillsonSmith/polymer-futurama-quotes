@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "futurama-quotes",
   "version": "0.0.2",
   "authors": [
@@ -16,11 +15,5 @@
   "dependencies": {
     "polymer": "Polymer/polymer#~0.3.3",
     "polymer-test-tools": "Polymer/polymer-test-tools#~0.3.3"
-=======
-  "name": "polymer-futurama-quotes#gh-pages",
-  "private": true,
-  "dependencies": {
-    "futurama-quotes": "WillsonSmith/polymer-futurama-quotes#master"
->>>>>>> b20ce9853dec129ca4d5b49ed3d9087006336896
   }
 }

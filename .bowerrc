@@ -1,3 +1,9 @@
 {
+<<<<<<< HEAD
   "directory": "../"
 }
+=======
+  "directory": "components"
+}
+
+>>>>>>> b20ce9853dec129ca4d5b49ed3d9087006336896

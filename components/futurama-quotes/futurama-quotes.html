@@ -1,0 +1,72 @@
+<link rel="import" href="../../polymer/polymer.html">
+
+<!--
+Element providing solution to no problem in particular.
+
+##### Example
+
+    <futurama-quotes></futurama-quotes>
+
+@element futurama-quotes
+@blurb An element that displays random Futurama quotes.
+@status alpha
+@homepage https://github.com/WillsonSmith/polymer-futurama-quotes
+-->
+<polymer-element name="futurama-quotes">
+
+  <template>
+    <link rel="stylesheet" href="futurama-quotes.css" type='text/css'>
+
+    <section>
+      <p class="quote" id="quote"></p>
+    </section>
+
+  </template>
+
+  <script>
+
+    function Connect(method, location) {
+
+        var request = new XMLHttpRequest(),
+            response;
+
+        request.open(method, location, false);
+        request.send();
+
+        if (request.status === 200) {
+
+            response = request.responseText;
+
+        }
+
+        this.respond = function() {
+
+            return response;
+
+        };
+
+    }
+
+
+    Polymer("futurama-quotes", {
+
+      quote: "",
+      ready: function(){
+
+
+        var quoteConnect = new Connect("GET", "futurama.js"),
+            quotesArray = JSON.parse(quoteConnect.respond()),
+            quotesLength = quotesArray.length,
+            usedQuote = quotesArray[Math.floor(Math.random() * (quotesLength))];
+
+        usedQuote = usedQuote.replace(/(?:\r\n|\r|\n)/g, "<br />");
+        this.$.quote.innerHTML = usedQuote;
+
+
+      }
+
+    });
+
+  </script>
+
+</polymer-element>

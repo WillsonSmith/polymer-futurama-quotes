@@ -1,7 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "futurama-quotes",
-  "version": "0.0.2",
   "authors": [
     "Willson Smith <willsonsmth@gmail.com>"
   ],
@@ -16,11 +14,15 @@
   "dependencies": {
     "polymer": "Polymer/polymer#~0.3.3",
     "polymer-test-tools": "Polymer/polymer-test-tools#~0.3.3"
-=======
-  "name": "polymer-futurama-quotes#gh-pages",
-  "private": true,
-  "dependencies": {
-    "futurama-quotes": "WillsonSmith/polymer-futurama-quotes#master"
->>>>>>> b20ce9853dec129ca4d5b49ed3d9087006336896
-  }
+  },
+  "_release": "0b23d06de7",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "0b23d06de7534cc004b606b9c020f80891fb27d8"
+  },
+  "_source": "git://github.com/WillsonSmith/polymer-futurama-quotes.git",
+  "_target": "master",
+  "_originalSource": "WillsonSmith/polymer-futurama-quotes",
+  "_direct": true
 }
